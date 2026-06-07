@@ -3,27 +3,66 @@ body {
     font-size: 16px;
 }
 
+/* Skip link */
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background: yellow;
+    padding: 10px;
+}
+
+/* Header */
+
 header {
     background-color: lightblue;
+    padding: 20px;
 }
+
+/* Nav */
 
 nav {
     background-color: lightgray;
+    display: inline-block;
+    width: 80%;
+    padding: 15px;
 }
+
+/* Стиль li закоментовано відповідно до завдання */
+
+/*
+li {
+    display: inline-block;
+    width: 180px;
+}
+*/
+
+/* Лише картинки всередині nav */
+
+nav img {
+    width: 10%;
+}
+
+/* Main */
 
 main {
     background-color: white;
     font-size: 18px;
 }
 
+/* Footer */
+
 footer {
     background-color: lightblue;
+    padding: 10px;
 }
 
-li {
-    display: inline-block;
-    width: 180px;
-}
+/* H1 */
 
 h1 {
     text-align: center;
@@ -31,6 +70,38 @@ h1 {
     color: navy;
 }
 
+/* Paragraph */
+
 p {
     line-height: 1.6;
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Картинки в grid */
+
+.grid img {
+    width: 100%;
+}
+
+/* Flex */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.flex div {
+    padding: 15px;
+    background-color: #d9d9d9;
 }

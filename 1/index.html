@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Світ комп'ютерів</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <a href="#main-content" class="skip-link">
+        Перейти до основного змісту
+    </a>
 
     <header>
         <h1>Світ комп'ютерів</h1>
@@ -15,6 +18,9 @@
     </header>
 
     <nav>
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=300"
+             alt="Логотип">
+
         <ul>
             <li>Головна</li>
             <li>Типи ПК</li>
@@ -22,7 +28,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main id="main-content">
 
         <section>
             <h2>Основні типи комп'ютерів</h2>
@@ -39,36 +45,49 @@
         </section>
 
         <section>
-            <h2>Зображення комп'ютерів</h2>
+            <h2>Галерея (Grid)</h2>
 
-            <img
-                src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=500"
-                alt="Настільний комп'ютер"
-                width="300">
+            <div class="grid">
 
-            <img
-                src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?w=500"
-                alt="Ноутбук на столі"
-                width="300">
+                <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=500"
+                     alt="Настільний комп'ютер">
 
-            <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
-                alt="Комп'ютерне обладнання"
-                width="300">
+                <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?w=500"
+                     alt="Ноутбук">
+
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+                     alt="Обладнання">
+
+                <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=500"
+                     alt="Монітор">
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Популярні бренди (Flex)</h2>
+
+            <div class="flex">
+                <div>Dell</div>
+                <div>HP</div>
+                <div>Lenovo</div>
+                <div>Apple</div>
+                <div>Asus</div>
+            </div>
         </section>
 
         <section>
             <h2>Корисні ресурси</h2>
 
             <p>
-                <a href="https://uk.wikipedia.org/wiki/Комп%27ютер" target="_blank">
-                    Стаття про комп'ютери у Вікіпедії
+                <a href="https://uk.wikipedia.org/wiki/Комп%27ютер">
+                    Вікіпедія
                 </a>
             </p>
 
             <p>
-                <a href="https://www.intel.com" target="_blank">
-                    Офіційний сайт Intel
+                <a href="https://www.intel.com">
+                    Intel
                 </a>
             </p>
         </section>
